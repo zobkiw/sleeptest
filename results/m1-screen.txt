@@ -1,0 +1,29 @@
+FINAL RUN
+
+<<< GO SLEEPING... 2021-03-20 20:26:17.240372 +0000 UTC
+=======================
+zzz GO PREV SLEEP TIME: 59m59.977141s
+zzz GO ALL SLEEP TIMES: [1h4m29.852317s 1h4m54.001291s 59m59.997482s 1h5m25.886925s 2h2m8.530685s 1h5m24.720294s 59m59.977141s]
+>>> GO STARTING... 2021-03-20 21:26:17.217513 +0000 UTC
+GO PROCESSING COMMAND 1 uptime
+ start uptime: Sat Mar 20 21:26:17 UTC 2021
+17:26  up 11 days,  9:29, 11 users, load averages: 1.17 1.64 1.56
+ sleeping for 6 seconds...
+ end uptime: Sat Mar 20 21:26:23 UTC 2021
+GO PROCESSING COMMAND 2 uptime
+ start uptime: Sat Mar 20 21:26:23 UTC 2021
+17:26  up 11 days,  9:29, 11 users, load averages: 1.15 1.63 1.56
+ sleeping for 4 seconds...
+ end uptime: Sat Mar 20 21:26:27 UTC 2021
+GO PROCESSING COMMAND 3 uptime
+ start uptime: Sat Mar 20 21:26:27 UTC 2021
+17:26  up 11 days,  9:29, 11 users, load averages: 1.06 1.60 1.55
+ sleeping for 5 seconds...
+ end uptime: Sat Mar 20 21:26:32 UTC 2021
+GO PROCESSING ADDITIONAL COMMAND:  uptime
+ start uptime: Sat Mar 20 21:26:32 UTC 2021
+17:26  up 11 days,  9:30, 11 users, load averages: 1.06 1.59 1.54
+ sleeping for 4 seconds...
+ end uptime: Sat Mar 20 21:26:36 UTC 2021
+GO PROCESSING TIME: 19.108584s
+<<< GO SLEEPING... 2021-03-20 21:26:36.326097 +0000 UTC
