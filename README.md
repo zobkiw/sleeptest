@@ -30,7 +30,7 @@ It's only been running a few iterations at the moment but some interesting numbe
 ```
 - M1 terminal tab:      [1h4m29.850342s 1h4m54.004981s 59m59.994061s 1h5m25.892846s 2h2m8.529273s 1h5m24.720327s]
 - M1 screen session:    [1h4m29.852317s 1h4m54.001291s 59m59.997482s 1h5m25.886925s 2h2m8.530685s 1h5m24.720294s]
-- Intel screen session: zzz GO ALL SLEEP TIMES: [59m59.940643s 1h0m0.110959s 1h0m0.103718s]
+- Intel screen session: [59m59.940643s 1h0m0.110959s 1h0m0.103718s]
                         NOTE: only 3 results as I stay disconnected from the machine for awhile to see how it reacts
 ```
 
