@@ -28,11 +28,11 @@ I wrote the code you see here in order to test more carefully and watch more clo
 It's only been running a few iterations at the moment but some interesting numbers are already beginning to show. What follows is the output that occurs as the loop restarts after a sleep. I store all the previous sleep times in a slice and display them as comparisons.
 
 ```
-- M1 terminal tab:        [1h4m29.850342s 1h4m54.004981s _59m59.994061s_ 1h5m25.892846s **2h2m8.529273s** 1h5m24.720327s]
-- M1 screen session:      [1h4m29.852317s 1h4m54.001291s _59m59.997482s_ 1h5m25.886925s **2h2m8.530685s** 1h5m24.720294s]
-- Intel screen session:   [_59m59.940643s_ 1h0m0.110959s 1h0m0.103718s]
-                          NOTE: only 3 results as I stay disconnected from the machine for awhile to see how it reacts
-- DgtlOcn screen session: 
+- M1 terminal tab:        [1h4m29.850342s 1h4m54.004981s 59m59.994061s 1h5m25.892846s 2h2m8.529273s 1h5m24.720327s 59m59.980485s]
+- M1 screen session:      [1h4m29.852317s 1h4m54.001291s 59m59.997482s 1h5m25.886925s 2h2m8.530685s 1h5m24.720294s 59m59.977141s]
+- Intel screen session:   [59m59.940643s 1h0m0.110959s 1h0m0.103718s 1h3m58.080461s 1h6m25.252947s 1h11m23.48131s 1h7m46.400632s]
+
+- DgtlOcn screen session: NEW - data coming soon
   Ubuntu Docker 19.03.12
   go1.16.2 linux/amd64
 ```
