@@ -7,6 +7,8 @@ golang `time.Sleep()` test
 
 macOS has a problem on both M1 and Intel. A Digital Ocean Linux droplet works perfectly fine. See description and data below. 
 
+See https://github.com/golang/go/issues/44343 if you've stumbled upon this from some other place.
+
 ### Quick Start
 
 Use `go run main.go` to run this code.
