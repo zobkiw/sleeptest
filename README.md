@@ -54,3 +54,29 @@ One interesting find, the M1 was left idle for almost two hours. It last posted 
 ### Digitial Ocean Droplet
 
 I decided to also do some runs on a Digital Ocean droplet. One of the smallest, configuration shown in the chart above. Note the very strict adherance to the 1 hour time. Impressive, so we know that Go can do it. It would seem that maybe macOS is causing some problems specifically.
+
+### Python
+
+For kicks, I wrote a super simple Python 3.9.1 script to see how sleep behaves. I only ran it on the M1, I think it proves the point. Python can exhibit a similar problem. The results and the script itself follow:
+
+```
+ABOUT TO SLEEP:  2021-03-21 14:23:52.171367
+AWAKE:           2021-03-21 15:23:52.178701 // one hour = one hour
+----------------
+ABOUT TO SLEEP:  2021-03-21 15:23:52.181397
+AWAKE:           2021-03-21 16:24:43.046964 // one hour = one hour and 51-ish seconds
+----------------                            // the machine was on but idle starting sometime in the second iteration
+ABOUT TO SLEEP:  2021-03-21 16:24:43.048686 // the machine was being used sometime in the third iteration
+AWAKE:           2021-03-21 17:59:33.436385 // one hour = one hour and 35-ish minutes
+```
+
+```
+import time
+from datetime import datetime
+
+while 1:
+    print("ABOUT TO SLEEP: ", datetime.utcnow())
+    time.sleep(60*60)
+    print("AWAKE:          ", datetime.utcnow())
+    print("----------------")
+```
