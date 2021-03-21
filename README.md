@@ -32,7 +32,7 @@ It's only been running a few iterations at the moment but some interesting numbe
 - M1 screen session:      [1h4m29.852317s 1h4m54.001291s 59m59.997482s 1h5m25.886925s 2h2m8.530685s 1h5m24.720294s 59m59.977141s]
 - Intel screen session:   [59m59.940643s 1h0m0.110959s 1h0m0.103718s 1h3m58.080461s 1h6m25.252947s 1h11m23.48131s 1h7m46.400632s]
 
-- DgtlOcn screen session: [1h0m0.081298801s]
+- DgtlOcn screen session: [1h0m0.081298801s 1h0m0.097626585s 1h0m0.000158801s]
   Ubuntu Docker 19.03.12
   go1.16.2 linux/amd64
 ```
