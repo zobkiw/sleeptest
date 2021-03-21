@@ -5,6 +5,8 @@ golang `time.Sleep()` test
 
 `time.Sleep(1 * time.Hour)` can sometimes sleep for up to 9 minutes more than 1 hour, although I generally see it between 3-5 minutes when it is behaving badly in my experience. Testing against go1.16.2 currently.
 
+macOS has a problem on both M1 and Intel. A Digital Ocean Linux droplet works perfectly fine. See description and data below. 
+
 ### Quick Start
 
 Use `go run main.go` to run this code.
