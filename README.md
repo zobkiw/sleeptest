@@ -25,6 +25,8 @@ The original script was running in a `screen` session on an Intel-based mac mini
 
 I wrote the code you see here in order to test more carefully and watch more closely, while mimicing the original as close as possible (ie: random sleep times in the shell script to mimic the average network access times of the original.) As I'm writing this, I have it running on the aforementioned Intel machine in a `screen` session and on an M1-based MBP (2020 / 16 GB) running go1.16.2 darwin/arm64 in both a `screen` session and another terminal tab per usual.
 
+Both the Intel and the M1 Macs are running Big Sur 11.2.3.
+
 It's only been running a few iterations at the moment but some interesting numbers are already beginning to show. What follows is the output that occurs as the loop restarts after a sleep. I store all the previous sleep times in a slice and display them as comparisons.
 
 ```
@@ -32,7 +34,7 @@ It's only been running a few iterations at the moment but some interesting numbe
 - M1 screen session:      [1h4m29.852317s 1h4m54.001291s 59m59.997482s 1h5m25.886925s 2h2m8.530685s 1h5m24.720294s 59m59.977141s]
 - Intel screen session:   [59m59.940643s 1h0m0.110959s 1h0m0.103718s 1h3m58.080461s 1h6m25.252947s 1h11m23.48131s 1h7m46.400632s]
 
-- DgtlOcn screen session: [1h0m0.081298801s 1h0m0.097626585s 1h0m0.000158801s]
+- DgtlOcn screen session: [1h0m0.081298801s 1h0m0.097626585s 1h0m0.000158801s 1h0m0.000324235s]
   Ubuntu Docker 19.03.12
   go1.16.2 linux/amd64
 ```
@@ -45,4 +47,6 @@ Updates will be posted here.
 
 One interesting find, the M1 was left idle for almost two hours. It last posted a "sleeping" message at 17:15:58. Once I returned to the computer (at approximately 19:07:42) the program was still sleeping. This may be how time.Sleep() works? If the machine itself goes to sleep it pauses and doesn't count that time? I would have expected that it might "catch up" as soon as the machine came back to life, however. The `screen` session also exhibited the same issue as one might expect. I'm waiting now to see if it (the Go program) comes back to life on it's own and wakes up...and there it goes, about 10 minutes after I woke up the machine. Note the 5th time in the M1 lists above (2h2m8.529273s and 2h2m8.530685s). Note the next sample "recovered" to a more normal time, albeit, more than an hour.
 
+### Digitial Ocean Droplet
 
+I decided to also do some runs on a Digital Ocean droplet. One of the smallest, configuration shown in the chart above. Note the very strict adherance to the 1 hour time. Impressive, so we know that Go can do it. It would seem that maybe macOS is causing some problems specifically.
