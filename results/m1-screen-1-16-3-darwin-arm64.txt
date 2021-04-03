@@ -1,0 +1,29 @@
+ FINAL RUN go1.16.3 darwin/arm64
+
+ <<< GO SLEEPING... 2021-04-02 20:36:43.126732 +0000 UTC
+ =======================
+ zzz GO PREV SLEEP TIME: 2h21m22.47225s (computer was asleep)
+ zzz GO ALL SLEEP TIMES: [59m59.979776s 1h0m0.019405s 59m59.98669s 1h0m0.001715s 1h0m0.001987s 59m59.976767s 2h21m22.47225s]
+ >>> GO STARTING... 2021-04-02 22:58:05.598982 +0000 UTC
+ GO PROCESSING COMMAND 1 uptime
+  start uptime: Fri Apr 2 22:58:05 UTC 2021
+ 18:58  up 10 days,  9:35, 5 users, load averages: 2.22 2.85 2.81
+  sleeping for 4 seconds...
+  end uptime: Fri Apr 2 22:58:09 UTC 2021
+ GO PROCESSING COMMAND 2 uptime
+  start uptime: Fri Apr 2 22:58:09 UTC 2021
+ 18:58  up 10 days,  9:35, 5 users, load averages: 2.21 2.83 2.81
+  sleeping for 7 seconds...
+  end uptime: Fri Apr 2 22:58:16 UTC 2021
+ GO PROCESSING COMMAND 3 uptime
+  start uptime: Fri Apr 2 22:58:16 UTC 2021
+ 18:58  up 10 days,  9:35, 5 users, load averages: 2.24 2.82 2.80
+  sleeping for 5 seconds...
+  end uptime: Fri Apr 2 22:58:21 UTC 2021
+ GO PROCESSING ADDITIONAL COMMAND:  uptime
+  start uptime: Fri Apr 2 22:58:21 UTC 2021
+ 18:58  up 10 days,  9:35, 5 users, load averages: 2.22 2.81 2.80
+  sleeping for 7 seconds...
+  end uptime: Fri Apr 2 22:58:28 UTC 2021
+ GO PROCESSING TIME: 23.145532s
+ <<< GO SLEEPING... 2021-04-02 22:58:28.744514 +0000 UTC

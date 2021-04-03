@@ -1,4 +1,4 @@
-FINAL RUN
+FINAL RUN go1.16.2 darwin/amd64
 
 <<< GO SLEEPING... 2021-03-20 19:24:51.261283 +0000 UTC
 =======================

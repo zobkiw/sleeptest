@@ -1,11 +1,13 @@
 # sleeptest
-golang `time.Sleep()` test 
+golang `time.Sleep()` test
+
+IMPORTANT: NOTE: 1.16.3 seems to solve the issue outlined here. Feel free to continue to read if you have nothing better to do.
 
 ### TL;DR
 
 `time.Sleep(1 * time.Hour)` can sometimes sleep for longer than the 1 hour that is specified, although I generally see it between 3-5 minutes when it is behaving badly in my experience. Testing against go1.16.2 currently.
 
-macOS has a problem on both M1 and Intel. A Digital Ocean Linux droplet works perfectly fine. See description and data below. 
+macOS has a problem on both M1 and Intel. A Digital Ocean Linux droplet works perfectly fine. See description and data below.
 
 See https://github.com/golang/go/issues/44343 if you've stumbled upon this from some other place.
 
@@ -21,7 +23,7 @@ Please tell me if there are any bugs in this code that could be causing this iss
 
 This test is to help determine how `time.Sleep()` functions in Go in various scenarios.
 
-I wrote a Go program that called a shell script that executed multiple command line tools - each of which accessed the network. The shell script was executed serially using `exec.Command()`, in a loop 3x, being passed a different parameter each time. Once all of the calls completed, the Go program would execute one final shell script and then `time.Sleep(1 * time.Hour)` before continuing the endless for loop. 
+I wrote a Go program that called a shell script that executed multiple command line tools - each of which accessed the network. The shell script was executed serially using `exec.Command()`, in a loop 3x, being passed a different parameter each time. Once all of the calls completed, the Go program would execute one final shell script and then `time.Sleep(1 * time.Hour)` before continuing the endless for loop.
 
 The original shell script would gather data from AWS, format it, and then post it to a chat room, although the exact task didn't seem to influence the sleep timing issue since it was outside the scope of the sleep itself. I noticed that in the chat room the first few times this ran, the timestamps would be one hour later each time. If the script finished at 1:03 the next would would begin at 2:03, etc. However, after a few runs the times would increase to 3 minutes or more. One time I even saw a 9 minute discrepancy...lost time...mind you, the timestamps were very course, so I wrote the program here for more granularity and to distill the problem down.
 
