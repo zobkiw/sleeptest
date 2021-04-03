@@ -1,7 +1,7 @@
 # sleeptest
 golang `time.Sleep()` test
 
-IMPORTANT: NOTE: 1.16.3 seems to solve the issue outlined here. Feel free to continue to read if you have nothing better to do.
+IMPORTANT: NOTE: 1.16.3 seems to solve the issue outlined here. Feel free to continue to read if you have nothing better to do. See [m1-screen-1-16-3-darwin-arm64.txt](https://github.com/zobkiw/sleeptest/blob/main/results/m1-screen-1-16-3-darwin-arm64.txt) and [m1-screen-1-16-3-darwin-amd64.txt](https://github.com/zobkiw/sleeptest/blob/main/results/m1-screen-1-16-3-darwin-amd64.txt) for results.
 
 ### TL;DR
 
